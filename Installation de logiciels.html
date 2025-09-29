@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Congo - Installation de logiciels</title>
+    <style>
+        body {
+            background-color: orange;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6600;
+            color: white;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 10px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .section {
+            background-color: white;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease forwards;
+            opacity: 0;
+        }
+
+        h2, h3 {
+            color: #ff6600;
+        }
+
+        .btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff6600;
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="assets/image/Copilot_20250908_193555.png" alt="Logo Cyber Congo" class="logo">
+        <h4>Installation de logiciels</h4>
+    </header>
+
+    <div class="section">
+        <h2>Formulaire de demande</h2>
+        <form class="contact-form" action="contact.php" method="post">
+            <input type="text" name="nom" placeholder="Nom" required>
+            <input type="text" name="prenom" placeholder="Prénom" required>
+            <input type="text" name="adresse" placeholder="Adresse" required>
+            <input type="text" name="telephone" placeholder="Numéro de téléphone" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="5" placeholder="Votre demande" required></textarea>
+            <button class="btn" type="submit">Envoyer</button>
+            <button class="btn" type="reset">Annuler</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 Cyber Congo. Tous droits réservés.
+    </footer>
+
+</body>
+</html>

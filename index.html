@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Congo</title>
+    <style>
+        body {
+            background-color: orange;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6600;
+            color: white;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 10px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .section {
+            background-color: white;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease forwards;
+            opacity: 0;
+        }
+
+        h2, h3 {
+            color: #ff6600;
+        }
+
+        .btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            margin-top: 10px;
+        }
+
+        .testimonial {
+            background-color: #f9f9f9;
+            border-left: 5px solid #ff6600;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial:hover {
+            background-color: #fff3e0;
+            transform: scale(1.02);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff6600;
+            color: white;
+        }
+
+        .whatsapp-btn,
+        .Facebook-btn {
+            display: inline-block;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .whatsapp-btn {
+            background-color: #25D366;
+        }
+
+        .Facebook-btn {
+            background-color: #1247CC;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        header img {
+            animation: pulse 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="assets/image/Copilot_20250908_193555.png" alt="Logo Cyber Congo" class="logo">
+        <h1>Accueil</h1>
+    </header>
+
+    <div class="section">
+        <h2>À propos</h2>
+        <p><strong>Notre mission :</strong> Offrir un espace numérique accessible, fiable et convivial pour tous vos
+            besoins administratifs, bureautiques et informatiques. Cyber Congo est un pont entre la technologie et la
+            communauté.</p>
+    </div>
+
+    <div class="section">
+        <h3>Nos services :</h3>
+        <button class="btn" onclick="window.location.href='Installation_de_logiciels.html'">Installation de logiciels</button>
+        <button class="btn" onclick="window.location.href='Installation de système.html'">Installation de système d'exploitation</button>
+        <button class="btn" onclick="window.location.href='Rédaction de cv.html'">Rédaction de CV et lettres de motivation</button>
+        <button class="btn" onclick="window.location.href='Transcription et traitement de texte.html'">Transcription et traitement de texte</button>
+        <p>Et bien plus encore, le tout adapté à vos besoins !</p>
+    </div>
+
+    <div class="section">
+        <h2>Témoignages clients</h2>
+        <div class="testimonial">
+            <p>"Service rapide et professionnel. Mon CV a été transformé en un outil puissant pour mes candidatures." – <em>Jean M.</em></p>
+        </div>
+        <div class="testimonial">
+            <p>"J’ai pu installer mon système sans stress grâce à leur accompagnement. Merci Cyber Congo !" – <em>Clarisse T.</em></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Contactez-nous</h2>
+        <form class="contact-form" action="contact.php" method="post">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="text" name="prenom" placeholder="Votre prénom">
+            <input type="text" name="adresse" placeholder="Votre adresse">
+            <input type="text" name="telephone" placeholder="Votre téléphone">
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="Infos" rows="4" placeholder="Infos sur votre CV"></textarea>
+            <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+            <button class="btn" type="submit">Envoyer</button>
+        </form>
+
+        <p>Ou discutez directement avec nous :</p>
+        <a class="whatsapp-btn" href="https://wa.me/242068587618" target="_blank">📱 WhatsApp</a>
+        <a class="Facebook-btn" href="https://www.facebook.com/profile.php?id=61580090685947" target="_blank">📱 Facebook</a>
+    </div>
+
+    <footer>
+        &copy; 2025 Cyber Congo. Tous droits réservés.
+    </footer>
+
+</body>
+
+</html>
